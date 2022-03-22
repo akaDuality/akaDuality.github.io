@@ -1,0 +1,13 @@
+.appStoreButton {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 13px
+/*  width: 250px;
+  height: 83px;*/
+}
+
+.appStoreButton > picture > img {
+  border-radius: 13px
+  width: 250px;
+  height: 83px;
+}

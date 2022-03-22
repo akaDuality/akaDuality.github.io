@@ -1,0 +1,37 @@
+.header {
+  text-align: center;
+}
+
+.appLogo {
+   width: 200px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.appName {
+  margin-bottom: 40px;
+}
+
+.appNameSubtitle {
+  display: block;
+  font-size: 50%;
+  line-height: 200%;
+  font-weight: normal;
+}
+
+.AppStoreButton {
+  margin: 20px;
+}
+
+.headerImage {
+  width: 110%;
+  margin-left: -5%; 
+  margin-right: -5%; 
+}
+
+.slogan {
+  margin-top: -2%;
+  margin-bottom: 100px;
+}
