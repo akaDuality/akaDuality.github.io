@@ -8,6 +8,8 @@
 
 h1 {
   font-size: 60px;
+  padding-top: 20px;
+  line-height: 120%;
 }
 
 .appName {
@@ -17,6 +19,7 @@ h1 {
 .appNameSubtitle {
   display: block;
   font-size: 50%;
+  margin-top: -20px;
   line-height: 200%;
   font-weight: normal;
 }
