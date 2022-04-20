@@ -1,9 +1,9 @@
 .body {
     font-family: "PT Sans", "Arial", sans-serif;
-    width: 100%;
-    margin: 20 auto;
+    width: 92%;
+    margin: 0 auto;
+    padding: 4%;
 }
-
 
 
 header {
@@ -21,7 +21,8 @@ header {
     gap: 4%;
 }
 
-article {
+.card {
+    display: block;
     margin-bottom: 20px;
     width: 95%;
 }
@@ -37,13 +38,13 @@ img {
 }
 
 @media only screen and (min-width: 500px) {
-    article {
-        width: 48%;
+    .card {
+        width: 45%;
     }
 }
 
 @media only screen and (min-width: 900px) {
-    article {
+    .card {
         width: 30%;
     }
 }
@@ -52,5 +53,13 @@ img {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
+    /* TODO: pin to bottom */
 }
 
+.order-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: greenyellow;
+}
