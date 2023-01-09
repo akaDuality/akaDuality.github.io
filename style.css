@@ -5,5 +5,8 @@
 @import "styles/blocks/footer.css";
 @import "styles/blocks/appstoreButton.css";
 @import "styles/blocks/header.css";
+@import "styles/blocks/video.css";
+@import "styles/blocks/image.css";
+@import "styles/blocks/sideImage.css";
 
 @import "styles/blocks/desktop.css";
