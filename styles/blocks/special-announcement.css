@@ -1,0 +1,10 @@
+.special-announcement {
+  border: 2px solid dodgerblue;
+  border-radius: 20px;
+  padding: 20px 50px;
+  margin-bottom: 100px;
+}
+
+.special-announcement-link:visited {
+
+}

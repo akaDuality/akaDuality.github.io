@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>VoiceOver Designer</title>
   <link rel="stylesheet" href="./../style.css" />
+
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -21,9 +22,11 @@
   
 	<link rel="apple-touch-icon" href="images/logo.png">
 
-<noscript><div><img src="https://mc.yandex.ru/watch/88012616" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+  <noscript><div><img src="https://mc.yandex.ru/watch/88012616" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  
 </head>
+
 <body>
   <section class="header">
     <div class="headerApp">
@@ -80,15 +83,43 @@
     <h2>Разобраться</h2>
     <p>Мы знаем насколько сложно разобраться в теме доступности приложений в самом начале, поэтому предлагаем примеры адаптации самых разных экранов.</p>
 
-    <p>Также посмотрити <a href="https://www.youtube.com/playlist?list=PLIl2EzNYri0cLtSlZowttih25VnSvWITu">плейлист Apple про доступность</a>, он очень вдохновляет!</p>
+    <p>Также посмотрите <a href="https://www.youtube.com/playlist?list=PLIl2EzNYri0cLtSlZowttih25VnSvWITu">плейлист Apple про доступность</a>, он очень вдохновляет!</p>
 
-    <img
-        class="headerImage"
-        src="images/PreviewSamples.png"
-        alt="Четыре скриншота с разметкой из приложения VoiceOver Designer"
-        />
+    <div class="video-sample-container">
+      <div class="video-sample-item">
+        <video 
+          width="400" height="865" 
+          controls="controls" 
+          poster="samples/1.png">
+         <source src="samples/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
 
-    Вы можете добавить и своим примеры <a href="https://github.com/VODGroup/VoiceOverSamples">в общий репозиторий</a> 
+        <p class="video-caption">Пример неадаптированного экрана: элементов много, подписи не везде, структура экрана теряется на слух</p>
+      </div>
+
+      <div class="video-sample-item">
+        <video 
+          width="400" height="865" 
+          controls="controls" 
+          poster="samples/2.png">
+         <source src="samples/2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
+
+        <p class="video-caption">После адаптации элементов стало меньше, все подписаны, приложением удобно пользоваться на слух</p>
+      </div>  
+    </div>
+
+    <article class="special-announcement">
+      <h3>Больше примеров</h3>
+      <p>
+      Видео выше это лишь парочка примеров <a class="special-announcement-link" href="https://github.com/VODGroup/VoiceOverSamples">из репозитория.</a></p>
+      <p>
+        Вы можете добавить свои примеры адаптации, соберем коллекцию!
+      </p>
+    </article>
+    
+
+    
   </section>
 
   <section>
@@ -185,17 +216,14 @@
 
       <p>На текущий момент приложение не умеет синхронизировать дизайн сразу у нескольких людей как это делает Figma, но вы можете приложить .vodesign документ к задаче в таск-трекере :D</p>
 
-      <p>Но у нас есть что предложить: целая <a href="https://rubanov.dev/a11y-book/">книга Про доступность на iOS</a>! Книга раскрывает разные нюансы программирования доступности и вместе с размечеными макетами очень сильно упрощает создание отличной доступности ваших приложений.</p>
+      <p>Но у нас есть что предложить: целая книга <a href="https://rubanov.dev/a11y-book/">«Про доступность iOS»</a>! Книга раскрывает разные нюансы программирования доступности и вместе с размечеными макетами очень сильно упрощает создание отличной доступности ваших приложений.</p>
     </div>
-    
-    
+
     <img
       class="side-image"
       src="images/BookCover.png"
       alt="Обложка книги Про доступность iOS"
       />
-    
-    
   </section>
 
 
@@ -203,17 +231,26 @@
     <h2>Мечты и планы разработчиков</h2>
     <div class="features">
       <article>
-        <h3>Figma integration</h3>
+        <h3>Интеграция с Фигмой</h3>
         <p>
-          Currently we have just old-fasioned file-travelling, yep. Figma-era learns us that this process can be much simpler, we working on that.
+          Было бы здорово не работать со скриншотами экранов, а размечать макеты прямо в Фигме. Мы попробуем это сделать, заодно может быть и файлы передавать не придется и все будет в облаке.
         </p>
       </article>
       <article>
-        <h3>Automated testing</h3>
+        <h3>Автоматическое тестирование</h3>
         <p>
-          The text can be used to verify result of developer's work and automated. As a result you will have the whole cycle of development: design-prototype-implementation-automation testing
+          Не сломать доступность в новом релизе — важнейшее свойство доступности. Мы хотим сделать инструмент который позволит из макета сгенерировать автоматические тесты, тем самым упростив работу и разработчикам и тестировщикам. 
         </p>
     </div>
+
+    <p>
+      Когда это будет сделано мы не знаем, но чем больше людей пользуется нашим приложением, тем больше нам хочется его делать, поэтому обязательно расскажите своим друзьям о приложении.
+    </p>
+
+    <p>
+      Ну а если вы умеете программировать и хотите нам помочь, то присоединяйтесь к разработке <a href="https://github.com/VODGroup/VoiceOverDesigner">в репозитории</a>.
+    </p>
+
   </section>
 
   <footer class="footer">

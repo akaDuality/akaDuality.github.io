@@ -8,5 +8,7 @@
 @import "styles/blocks/video.css";
 @import "styles/blocks/image.css";
 @import "styles/blocks/sideImage.css";
+@import "styles/blocks/videoSamples.css";
+@import "styles/blocks/special-announcement.css";
 
 @import "styles/blocks/desktop.css";
